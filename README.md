@@ -20,6 +20,6 @@ Main Success:
 
 ================================================================================
 Структура проекта:
-features\hh_tests\hh.feature <- feature файл, в котором хранятся описаные сценарии
-features\step_definitions\hh_steps.rb <- описания шагов
-features\support\Page_elements\hh_elements.rb <- файл для хранения глобальных переменных для их переиспользования
+1) features\hh_tests\hh.feature <- feature файл, в котором хранятся описаные сценарии
+2) features\step_definitions\hh_steps.rb <- описания шагов
+3) features\support\Page_elements\hh_elements.rb <- файл для хранения глобальных переменных для их переиспользования
