@@ -4,7 +4,6 @@ Feature: Test feature for My Office
     Given hh.ru site is opened
 
   Scenario: Search for My Office
-    Given hh.ru site is opened
     When I open advanced search menu
     And I select to search only in company name
     And I add next text to the keywords field: мой офис

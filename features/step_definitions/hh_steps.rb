@@ -3,7 +3,6 @@ Given /^(.*?) site is opened$/ do |site|
 end
 
 Given /^I open page for company: (.*?)$/ do |name|
-  visit("http://hh.ru")
   step 'I open advanced search menu'
   step "I add next text to the keywords field: #{name}"
   step 'I click Find button'
@@ -73,6 +72,8 @@ Then /^I should see (.*?) in the companies list$/ do |name|
   expect(page).to have_css('a', text: name)
 end
 
+# This step can be done in two ways, because currently looks like there is a bug on hh.ru
+# I selected to just get value from page, but more correct way was to count elements on page, because it was faster
 Then /^Amount of vacancies in the current region should be more than (\d+)$/ do |number|
   expect(first('span.company-vacancies-hint').text.to_i).to be > number
 end
